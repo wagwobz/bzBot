@@ -404,3 +404,4 @@ appsettings.json
 bzbot.db
 bzbot.db-shm
 bzbot.db-wal
+appsettings.json
