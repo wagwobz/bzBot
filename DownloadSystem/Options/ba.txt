@@ -1,0 +1,6 @@
+--extractor-args "youtube:player_client=default,-web_creator"
+-o "Downloads\%(id)s.%(ext)s"
+--no-restrict-filenames
+--no-continue
+--cookies-from-browser "firefox"
+-f "ba"
