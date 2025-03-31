@@ -36,8 +36,8 @@ internal class InteractionHandler(
             // await _interactionService.RegisterCommandsGloballyAsync();
             // Console.WriteLine("Global commands registered.");
             
-            var guildId = configuration.GetSection("GuildIDs").GetValue<ulong>("guildID1");; // Replace with your guild ID
-            var guildId2 = configuration.GetSection("GuildIDs").GetValue<ulong>("guildID2"); // Replace with your guild ID
+            var guildId = configuration.GetSection("GuildIDs").GetValue<ulong>("guild1");; // Replace with your guild ID
+            var guildId2 = configuration.GetSection("GuildIDs").GetValue<ulong>("guild2"); // Replace with your guild ID
             await RegisterGuildCommandsAsync(guildId);
             await RegisterGuildCommandsAsync(guildId2);
         };

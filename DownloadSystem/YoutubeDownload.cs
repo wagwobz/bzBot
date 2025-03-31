@@ -42,7 +42,7 @@ public static class YoutubeDownload
                 CookiesFromBrowser = "firefox",
                 ExtractorArgs = "youtube:player_client=default,-web_creator",
             };
-            var fetch = await ytdl.RunVideoDataFetch(url, overrideOptions: options1);
+            var fetch = await ytdl.RunVideoDataFetch(url);
             id = fetch.Data.ID;
             title = fetch.Data.Title;
             return (id, title);

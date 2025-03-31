@@ -10,13 +10,13 @@ public class GuildDbContext : DbContext
     IConfiguration _configuration;
     ILogger _logger;
     
-    public GuildDbContext(DbContextOptions options, IConfiguration configuration, ILogger logger)
+    public GuildDbContext(DbContextOptions<GuildDbContext> options, IConfiguration configuration, ILogger logger)
         : base(options) {
         _configuration = configuration;
         _logger = logger;
     }
 
-    public GuildDbContext(IConfiguration configuration, ILogger<GuildDbContext> logger, ILogger logger1) {
+    public GuildDbContext(IConfiguration configuration, ILogger<GuildDbContext> logger) {
         _configuration = configuration;
         _logger = logger;
     }
