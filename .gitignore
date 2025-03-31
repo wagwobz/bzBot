@@ -400,3 +400,4 @@ FodyWeavers.xsd
 *.waw
 *.mpc
 *.mp3
+appsettings.json
