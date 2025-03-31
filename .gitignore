@@ -401,3 +401,6 @@ FodyWeavers.xsd
 *.mpc
 *.mp3
 appsettings.json
+bzbot.db
+bzbot.db-shm
+bzbot.db-wal
